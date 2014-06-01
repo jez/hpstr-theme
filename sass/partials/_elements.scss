@@ -1,0 +1,17 @@
+// Horizontal Rule
+// --------------------------------------------------
+hr { 
+  display: block; 
+  margin: 1em 0; 
+  padding: 0;
+  height: 1px; 
+  border: 0; 
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #fff; 
+}
+
+// Global Transition
+// ---------------------------------------------------
+b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a {
+	@include transition(all .2s ease);
+}

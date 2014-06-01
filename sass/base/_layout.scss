@@ -1,0 +1,228 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: $body-color;
+}
+
+// Main
+// --------------------------------------------------
+.entry,
+.hentry {
+	@include clearfix();
+}
+.entry-content {
+	@include font-rem($p_fs);
+  @include line-height($p_lh);
+  @include margin-after;
+	// Dotted line underlines for links
+	p > a,
+	li > a {
+		border-bottom: 1px dotted lighten($link-color, 50%);
+		&:hover {
+			border-bottom-style: solid;
+		}
+	}
+}
+
+// Single Post and Page
+// --------------------------------------------------
+.entry-meta {
+	@include font-rem($footer_fs);
+	text-transform: uppercase;
+	color: lighten($base-color,60%);
+	a {
+		color: lighten($base-color,60%);
+	}
+	.vcard {
+		&:before {
+			content: " by ";
+		}
+	}
+	.tag {
+		display: inline-block;
+		margin: 4px;
+		padding: 2px 6px;
+		background-color: lighten($base-color,60%);
+		color: $white;
+		@include border-radius(3px);
+		color: $white;
+		span {
+			vertical-align: super;
+			@include font-rem($super_fs);
+		}
+		&:hover {
+			background-color: lighten($base-color,50%);
+		}
+		&:active {
+			@include translate(0, 1px);
+	        box-shadow: 0 0 1px rgba($base-color,0.20);
+		}
+	}
+}
+#post,
+#page {
+	.entry-content {
+		margin: 40px 2px 20px 2px;
+		padding: 10px 15px;
+		background-color: $white;
+		box-shadow: 0 0 0 0, 0 6px 12px rgba($black,0.10);
+		@include border-radius(3px);
+		@media #{$medium} {
+			margin-left: 10px;
+			margin-right: 10px;
+			padding: 20px 30px;
+		}
+		@media #{$large} {
+			max-width: 800px;
+			margin: 50px auto 30px auto;
+			padding: 50px 80px;
+			> p:first-child {
+				@include font-rem($p1_fs);
+				@include line-height($p1_lh);
+        @include margin-after
+			}
+		}
+	}
+	#disqus_thread {
+		margin: 40px 2px 20px 2px;
+		padding: 10px 15px;
+		background-color: $white;
+		box-shadow: 0 0 0 1px rgba($border-color,0.10), 0 6px 12px rgba($black,0.10);
+		@include border-radius(3px);
+		@media #{$medium} {
+			margin-left: 10px;
+			margin-right: 10px;
+			padding: 20px 30px;
+		}
+		@media #{$large} {
+			max-width: 800px;
+			padding: 50px 80px;
+			margin: 0 auto 30px auto;
+		}
+	}
+	.entry-meta {
+		margin: 50px 30px 30px;
+		text-align: center;
+	}
+}
+.entry-tags {
+	display: block;
+	margin-bottom: 6px;
+}
+// Post Pagination Module
+.pagination {
+	margin: 20px 10px;
+	text-align: center;
+	ul {
+		display: inline;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	li {
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	.current-page {
+		font-weight: 700;
+	}
+}
+
+
+// Post Index 
+// --------------------------------------------------
+#post-index {
+	#main {
+		margin: 40px 2px 20px 2px;
+		@media #{$medium} {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		@media #{$large} {
+			max-width: 800px;
+			margin-top: 50px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	article {
+		background-color: $white;
+		box-shadow: 0 0 0 0, 0 6px 12px rgba($base-color,0.10);
+		@include border-radius(3px);
+		margin-bottom: 20px;
+		padding: 25px 15px;
+		@media #{$medium} {
+			padding: 30px;
+		}
+		@media #{$large} {
+			margin-bottom: 30px;
+			padding: 50px 80px;
+		}
+	}
+}
+
+// Footer
+// --------------------------------------------------
+.footer-wrapper {
+	@include clearfix();
+	margin: 2em auto;
+	text-align: center;
+	color: lighten($text-color,20%);
+	a {
+		color: lighten($text-color,20%);
+	}
+}
+
+// Social Share
+// --------------------------------------------------
+.socialcount {
+	@include font-rem($socialcount_fs);
+	font-weight: 700;
+	li { 
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	p > a,
+	li > a {
+		border-bottom-width: 0;
+	}
+}
+
+
+// Browser Upgrade
+// --------------------------------------------------
+.upgrade {
+	padding: 10px;
+	text-align: center;
+}
+
+// Google Search
+// --------------------------------------------------
+#goog-fixurl {
+	ul {
+		list-style: none;
+		margin-left: 0;
+		padding-left: 0;
+		li {
+			list-style-type: none;
+		}
+	}
+}
+#goog-wm-qt {
+	width: auto;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	padding: 8px 20px;
+	display: inline-block;
+  // TODO Figure out where this id is applied and add sass font variable
+	@include font-rem(0.875);
+	background-color: $white;
+	color: $primary;
+	border-width: 2px !important;
+	border-style: solid !important;
+	border-color: lighten($primary,50%);
+	@include border-radius(3px);
+}
+#goog-wm-sb {
+	.btn{};
+}

@@ -1,0 +1,30 @@
+---
+layout: default
+title: A Tech Blog by Jake Zimmerman
+description: "A tech blog by Jake Zimmerman. Updates occaisonally with tips, tricks, and hacks that have helped me out."
+categories: [Jekyll, theme, themes, responsive, blog, modern, tech, hacks]
+keywords: Jekyll theme themes responsive blog modern tech hacks
+image:
+  feature: threaded-blue-on-black-cropped.png
+---
+
+{% assign index = true %}
+{% for post in paginator.posts %}
+<article class="hentry">
+  {% include article.html %}
+</article><!-- /.hentry -->
+{% endfor %}
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a href="/" class="btn">Previous</a>
+    {% else %}
+      <a href="{{ root_url }}/page{{ paginator.previous_page }}" class="btn">Previous</a>
+    {% endif %}
+  {% endif %}
+  <a href="{{ root_url }}/archives">Blog Archives</a>
+  {% if paginator.next_page %}
+    <a href="{{ root_url }}/page{{ paginator.next_page }}" class="btn">Next</a>
+  {% endif %}
+</div><!-- /.pagination -->

@@ -1,0 +1,59 @@
+// Here you can easily change font faces which are used in your site.
+// To give it a try, uncomment and change some of the lines below, 
+// rebuild your blog, and see how it works. 
+// 
+// Remember: If you add web fonts, make sure to also include the @font-face 
+// directive in this file or add an appropriate <link> tag to the <head>.
+
+// Typefaces
+// ----------------------------------------------------------------------------
+//$base-font:     'Lato', Calibri, Arial, sans-serif;
+//$heading-font:  $base-font;
+//$caption-font:  $base-font;
+//$code-font:     Menlo, Monaco, Courier New, monospace;
+//$alt-font:      serif;
+// ----------------------------------------------------------------------------
+
+// Root sizes
+// ----------------------------------------------------------------------------
+// Used to  set absolute styles on the root elements so that rem's work
+//$doc-font-root: 16; // Number of pixels to mean 1 rem
+//$doc-margin:    1.625; // Space after paragraphs in rems
+// ----------------------------------------------------------------------------
+
+
+// Sizes
+// ------------------------------
+/* All font sizes in rem's. Units are omitted to make calculating multipliers
+ * and legacy px values easier. See base/_mixins.scss for more info on rem's. */
+// ----------------------------------------------------------------------------
+//$default-fs-mult:    1.0;   // Multiplied by _all_ other font-sizes
+                              // (useful if one font is smaller than the next)
+
+//$p_fs:               1.0;           // Default size for paragraphs
+//$p1_fs:              1.25 * $p_fs;  // First paragraph of post (p:first-child)
+
+//$h1_fs:              2.0;           // default for <h1> headings
+//$h1_sm_fs:           1.75 * ($h1_fs / 2); // <h1> in post title (small screens)
+//$h1_md_fs:           3.0 * ($h1_fs / 2);  // <h1> in post title (medium screens)
+//$h1_lg_fs:           3.75 * ($h1_fs / 2); // <h1> in post title (large screens)
+
+//$title-date_sm_fs:   1.125 * ($h1_fs / 2); // Date under post title (small)
+//$title-date_lg_fs:   1.875 * ($h1_fs / 2); // Date under post title (large)
+
+//$rm-title_sm_fs:     1.75 * ($h1_fs / 2);  // Read More title (small screen)
+//$rm-title_lg_fs:     2.25 * ($h1_fs / 2);  // Read More title (small screen)
+//$rm-item_fs:         1.125 * ($h1_fs / 2); // 2nd/3rd suggested article
+//$rm-pubdate_fs:      0.875 * ($h1_fs / 2); // 2nd/3rd suggested article date
+
+//$dl-menu_fs:         0.875;         // Font used in dl-menu
+
+//$button_fs:          0.875 * $p_fs; // All with class "btn" (.btn)
+//$image-credit_fs:    0.75;          // For background image credit
+//$figcaption_fs:      0.875 * $p_fs; // captions on figures using <figcaption>
+//$footer_fs:          0.75 * $p_fs;  // Footer text
+
+//$notice_fs:          0.875 * $p_fs; // All with class "notice" (.notice)
+//$super_fs:           0.625;         // May not actually affect anything...
+//$socialcount_fs:     1.0 * $p_fs;   // Social share buttons in footer
+// ----------------------------------------------------------------------------

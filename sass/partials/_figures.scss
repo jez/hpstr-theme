@@ -1,0 +1,65 @@
+// Figures and images
+// --------------------------------------------------
+figure {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include clearfix();
+  img {
+    margin-bottom: 10px;
+  }
+  a { 
+    img {
+      @include translate(0, 0);
+      @include transition-duration(0.25s);
+      &:hover {
+        @include translate(0, -5px);
+        box-shadow: 0 0 10px rgba($base-color,0.20);
+      }
+    }
+  }
+  &.half {
+    @media #{$large} {
+      img {
+        width: 310px;
+        float: left;
+        margin-right: 10px;
+      }
+      figcaption {
+        clear: left;
+      }
+    }
+  }
+  &.third {
+    @media #{$large} {
+      img {
+        width: 200px;
+        float: left;
+        margin-right: 10px;
+      }
+      figcaption {
+        clear: left;
+      }
+    }
+  }
+}
+svg:not(:root) {
+  overflow: hidden; 
+}
+
+img.left, img.right {
+  margin-bottom: 0.5rem;
+  margin-top:    0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  background: #eee;
+}
+img.left {
+  float: left;
+  margin-right: 1.5rem
+}
+img.right {
+  float: right;
+  margin-left: 1.5rem
+}

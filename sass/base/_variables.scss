@@ -1,0 +1,88 @@
+// Typography
+// ----------------------------------------------------------------------------
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic");
+
+// Typefaces
+// ------------------------------
+$base-font:         'Lato', Calibri, Arial, sans-serif !default;
+$heading-font:      $base-font !default;
+$caption-font:      $base-font !default;
+$code-font:         Menlo, Monaco, Courier New, monospace !default;
+$alt-font:          Georgia, serif !default;
+
+// Sizes
+// ------------------------------
+/* All font sizes in rem's. Units are omitted to make calculating multipliers
+ * and legacy px values easier. See base/_mixins.scss for more info on rem's. */
+
+$default-fs-mult:  1.0 !default;   // Multiplied by _all_ other font-sizes
+                                   // (useful if one font is smaller than the next)
+
+$p_fs:               1.1 !default;            // Default size for paragraphs
+$p1_fs:              1.25 * $p_fs !default;  // First paragraph of post (p:first-child)
+
+$h1_fs:              2.0 !default;           // default for <h1> headings
+$h1_sm_fs:           1.75 * ($h1_fs / 2) !default; // <h1> in post title (small screens)
+$h1_md_fs:           3.0 * ($h1_fs / 2) !default;  // <h1> in post title (medium screens)
+$h1_lg_fs:           3.75 * ($h1_fs / 2) !default; // <h1> in post title (large screens)
+
+$title-date_sm_fs:   1.125 * ($h1_fs / 2) !default; // Date under post title (small)
+$title-date_lg_fs:   1.875 * ($h1_fs / 2) !default; // Date under post title (large)
+
+$rm-title_sm_fs:     1.75 * ($h1_fs / 2) !default;  // Read More title (small screen)
+$rm-title_lg_fs:     2.25 * ($h1_fs / 2) !default;  // Read More title (small screen)
+$rm-item_fs:         1.125 * ($h1_fs / 2) !default; // 2nd/3rd suggested article
+$rm-pubdate_fs:      0.875 * ($h1_fs / 2) !default; // 2nd/3rd suggested article date
+
+$dl-menu_fs:         0.875 !default;   // Font used in dl-menu
+
+$button_fs:          0.875 * $p_fs !default; // All with class "btn" (.btn)
+$image-credit_fs:    0.75 !default;          // For background image credit
+$figcaption_fs:      0.875 * $p_fs !default; // captions on figures using <figcaption>
+$footer_fs:          0.75 * $p_fs !default;  // Footer text
+
+$notice_fs:          0.875 * $p_fs !default; // All with class "notice" (.notice)
+$super_fs:           0.625 !default;         // May not actually affect anything...
+$socialcount_fs:     1.0 * $p_fs !default;   // Social share buttons in footer
+
+// line-height
+// ------------------------------
+$default-lh-mult:  1.0 !default;
+$p_lh:             1.625 !default;
+$p1_lh:            1.5 !default;
+
+// Set absolute stylings on the root elements so that rem's have a reference
+$doc-font-root: 16 !default; // Number of pixels to mean 1 rem
+$doc-margin: 1.625 !default; // Space after paragraphs in rems
+
+body {
+	margin-top: 0px + $doc-margin * $doc-font-root;
+	font-size: 0px + $doc-font-root;	
+}
+
+// Colors
+// ----------------------------------------------------------------------------
+$base-color				: #222 !default;
+$body-color      	: #e8e8e8 !default;
+$text-color      	: #222 !default;
+$comp-color 	 		: adjust-hue($base-color, 180) !default; 
+$border-color    	: lighten($base-color,60) !default;
+$white           	: #fff !default;
+$black           	: #000 !default;
+$link-color 		  : #222 !default;
+
+$primary		: $base-color !default;
+$success		: #5cb85c !default;
+$warning		: #dd8338 !default;
+$danger			: #C64537 !default;
+$info				: #308cbc !default;
+
+// MEDIA QUERIES
+// ----------------------------------------------------------------------------
+$small:       "only screen and (min-width: 30em)" !default;
+$medium:      "only screen and (min-width: 48em)" !default;
+$large:       "only screen and (min-width: 62.5em)" !default;
+$highdensity: "only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+              "only screen and (-o-min-device-pixel-ratio: 3/2)",
+              "only screen and (min-resolution: 144dpi)",
+              "only screen and (min-resolution: 1.5dppx)" !default;

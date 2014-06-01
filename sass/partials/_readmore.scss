@@ -1,0 +1,75 @@
+// Read More Module
+.read-more {
+	position: relative;
+	margin: 40px 2px 20px 2px;
+	padding: 40px 15px 25px;
+	background-color: $white;
+	box-shadow: 0 0 0 1px rgba($border-color,0.10), 0 6px 12px rgba($black,0.10);
+	@include border-radius(3px);
+	@media #{$medium} {
+		margin: 50px 10px 20px 10px;
+		padding: 50px 40px 25px;
+	}
+	@media #{$large} {
+		max-width: 800px;
+		padding: 50px 80px;
+		margin: 60px auto;
+	}
+	text-align: center;
+	@include clearfix();
+}
+.read-more-header {
+	position: absolute;
+	top: -20px;
+	left: 0;
+	right: 0;
+	height: 35px;
+	a {
+		.btn{};
+	}
+}
+.read-more-content {
+	@include font-rem($p_fs);
+	@include line-height($p_lh);
+	// Dotted line underlines for links
+	p > a,
+	li > a {
+		border-bottom: 1px dotted lighten($link-color, 50%);
+		&:hover {
+			border-bottom-style: solid;
+		}
+	}
+	h3 {
+		margin: 0;
+		@include font-rem($rm-title_sm_fs);
+		a { 
+			color: $primary;
+		}
+		@media #{$medium} {
+			@include font-rem($rm-title_lg_fs);
+		}
+	}
+}
+.read-more-list {
+	border-top: solid 1px lighten($base-color,60%);
+}
+.list-item {
+	width: 100%;
+	text-align: left;
+	h4 { 
+		@include font-rem($rm-item_fs);
+		margin-bottom: 0; 
+	}
+	span { 
+		display: block;
+		@include font-rem($rm-pubdate_fs);
+		color: lighten($base-color,50%);
+	}
+	@media #{$medium} {
+		width: 49%;
+		float: left;
+		&:nth-child(2) {
+			text-align: right;
+		}
+	}
+}

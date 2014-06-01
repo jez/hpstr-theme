@@ -1,0 +1,17 @@
+{% if page.image.background or site.background %}
+  {% capture background %}
+    {% if page.image.background %}
+      {{ page.image.background }}
+    {% else %}
+      {{ site.background }}
+    {% endif %}
+  {% endcapture %}
+
+  {% unless background contains '//' %}
+    {% capture background %}
+      {{ root_url }}/images/{{ background }}
+    {% endcapture %}
+  {% endunless%}
+
+  <style type="text/css">body {background-image:url({{ background  }});}</style>
+{% endif %}

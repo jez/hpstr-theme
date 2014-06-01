@@ -1,0 +1,92 @@
+// Pygments color file
+
+// <variable>: <value>;                   // what color is generally used for
+// ---------------------------------------------------------------------------
+$pygray2: rgba(248,248,242,1) !default;   // Punctionation, certain names
+$pygray1: rgba(208,208,208,1) !default;   // Default foreground color
+$pygray0: rgba(143,144,138,1) !default;   // Line numbers
+$pygray01: rgba(73,72,62,1) !default;     // .hll background color
+$pygray02: rgba(39,40,34,1) !default;     // Default background color
+
+$pybrown: rgba(117,113,94,1) !default;    // Comments
+$pycyan: rgba(102,217,239,1) !default;    // Constants and most keywords
+$pymagenta: rgba(150,0,80,1) !default;    // Error text foreground
+$pydarkmagenta: rgba(30,0,16,1) !default; // Error text background
+$pygreen: rgba(166,226,46,1) !default;    // Functions, attributes,  etc.
+$pypink: rgba(249,38,114,1) !default;     // Operators, etc.
+$pyviolet: rgba(174,129,255,1) !default;  // Literals except strings, etc.
+$pyyellow: rgba(230,219,116,1) !default;  // String and date literals, etc.
+
+.highlight {
+  margin-bottom: 1.5em;
+  // @include font-rem(0.75);
+  color: $pygray1;
+  border: 1px solid darken($body-color, 5%);
+  background-color: $pygray02;
+  @include border-radius(3px);
+  pre {
+    position: relative;
+    margin: 0;
+    padding: 1em;
+  }
+  .lineno { padding-right: 24px; color: $pygray0; }
+  .hll { background-color: $pygray01; }
+  .c  { color: $pybrown; } /* Comment */
+  .err { color: $pymagenta; background-color: $pydarkmagenta; } /* Error */ 
+  .k  { color: $pycyan; } /* Keyword */
+  .l  { color: $pyviolet; } /* Literal */
+  .n  { color: $pygray2; } /* Name */
+  .o  { color: $pypink; } /* Operator */
+  .p  { color: $pygray2; } /* Punctuation */
+  .cm { color: $pybrown; } /* Comment.Multiline */
+  .cp { color: $pybrown; } /* Comment.Preproc */
+  .c1 { color: $pybrown; } /* Comment.Single */
+  .cs { color: $pybrown; } /* Comment.Special */
+  .ge { font-style: italic; } /* Generic.Emph */
+  .gs { font-weight: bold; } /* Generic.Strong */
+  .kc { color: $pycyan; } /* Keyword.Constant */
+  .kd { color: $pycyan; } /* Keyword.Declaration */
+  .kn { color: $pypink; } /* Keyword.Namespace */
+  .kp { color: $pycyan; } /* Keyword.Pseudo */
+  .kr { color: $pycyan; } /* Keyword.Reserved */
+  .kt { color: $pycyan; } /* Keyword.Type */
+  .ld { color: $pyyellow; } /* Literal.Date */
+  .m  { color: $pyviolet; } /* Literal.Number */
+  .s  { color: $pyyellow; } /* Literal.String */
+  .na { color: $pygreen; } /* Name.Attribute */
+  .nb { color: $pygray2; } /* Name.Builtin */
+  .nc { color: $pygreen; } /* Name.Class */
+  .no { color: $pycyan; } /* Name.Constant */
+  .nd { color: $pygreen; } /* Name.Decorator */
+  .ni { color: $pygray2; } /* Name.Entity */
+  .ne { color: $pygreen; } /* Name.Exception */
+  .nf { color: $pygreen; } /* Name.Function */
+  .nl { color: $pygray2; } /* Name.Label */
+  .nn { color: $pygray2; } /* Name.Namespace */
+  .nx { color: $pygreen; } /* Name.Other */
+  .py { color: $pygray2; } /* Name.Property */
+  .nt { color: $pypink; } /* Name.Tag */
+  .nv { color: $pygray2; } /* Name.Variable */
+  .ow { color: $pypink; } /* Operator.Word */
+  .w  { color: $pygray2; } /* Text.Whitespace */
+  .mf { color: $pyviolet; } /* Literal.Number.Float */
+  .mh { color: $pyviolet; } /* Literal.Number.Hex */
+  .mi { color: $pyviolet; } /* Literal.Number.Integer */
+  .mo { color: $pyviolet; } /* Literal.Number.Oct */
+  .sb { color: $pyyellow; } /* Literal.String.Backtick */
+  .sc { color: $pyyellow; } /* Literal.String.Char */
+  .sd { color: $pyyellow; } /* Literal.String.Doc */
+  .s2 { color: $pyyellow; } /* Literal.String.Double */
+  .se { color: $pyviolet; } /* Literal.String.Escape */
+  .sh { color: $pyyellow; } /* Literal.String.Heredoc */
+  .si { color: $pyyellow; } /* Literal.String.Interpol */
+  .sx { color: $pyyellow; } /* Literal.String.Other */
+  .sr { color: $pyyellow; } /* Literal.String.Regex */
+  .s1 { color: $pyyellow; } /* Literal.String.Single */
+  .ss { color: $pyyellow; } /* Literal.String.Symbol */
+  .bp { color: $pygray2; } /* Name.Builtin.Pseudo */
+  .vc { color: $pygray2; } /* Name.Variable.Class */
+  .vg { color: $pygray2; } /* Name.Variable.Global */
+  .vi { color: $pygray2; } /* Name.Variable.Instance */
+  .il { color: $pyviolet; } /* Literal.Number.Integer.Long */
+}

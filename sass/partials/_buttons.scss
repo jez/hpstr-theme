@@ -1,0 +1,69 @@
+// Buttons
+// --------------------------------------------------
+.btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  @include font-rem($button_fs);
+  background-color: $primary;
+  color: $white;
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-color: $primary;
+  @include border-radius(3px);
+  &:visited {
+    color: $white;
+  }
+  &:hover {
+    background-color: $white;
+    color: $primary;
+  }
+}
+.btn-success {
+  background-color: $success;
+  color: $white;
+  border-color: $success;
+  &:visited {
+    color: $white;
+  }
+  &:hover {
+    background-color: $white;
+    color: $success;
+  }
+}
+.btn-warning {
+  background-color: $warning;
+  color: $white;
+  border-color: $warning;
+  &:visited {
+    color: $white;
+  }
+  &:hover {
+    background-color: $white;
+    color: $warning;
+  }
+}
+.btn-danger {
+  background-color: $danger;
+  color: $white;
+  border-color: $danger;
+  &:visited {
+    color: $white;
+  }
+  &:hover {
+    background-color: $white;
+    color: $danger;
+  }
+}
+.btn-info {
+  background-color: $info;
+  color: $white;
+  border-color: $info;
+  &:visited {
+    color: $white;
+  }
+  &:hover {
+    background-color: $white;
+    color: $info;
+  }
+}
