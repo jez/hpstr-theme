@@ -12,7 +12,8 @@ $ git clone https://github.com/Z1MM32M4N/hpstr-theme.git .themes/hpstr
 $ rake install['hpstr']
 $ rake generate
 ```
-If the `rake` commands don't work, you may have to try `bundle exec rake`, depending on how you have ruby installed on your system.
+> ### Note
+> If the `rake` commands don't work, you may have to try `bundle exec rake`, depending on how you have ruby installed on your system.
 
 ## What Next
 There are a lot of cool things you can do after installing HPSTR for Octopress.
