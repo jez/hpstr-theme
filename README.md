@@ -42,7 +42,7 @@ You can read about the Sass documents [here](sass/README.md), and about the vari
 I didn't port every feature to Octopress. Instead, I focused mostly on just those which I thought I would personally use. If you like this theme but I left out your favorite feature, be sure to fork this repo, add in your feature _in a separate feature branch_, and submit a pull request. 
 
 ## Octopress 3.0
-Octopress 3.0 is [in the works!][v3]. This release, however, is [going to be vastly different][migration] from Octopress 2.0. In Octopress 3.0, [Octopress Ink][ink] will become the method through which themes are created, distributed, and updated, leaving the old method of creating themes used by version 2.0 behind.
+Octopress 3.0 is [in the works][v3]! This release, however, is [going to be vastly different][migration] from Octopress 2.0. In Octopress 3.0, [Octopress Ink][ink] will become the method through which themes are created, distributed, and updated, leaving the old method of creating themes used by version 2.0 behind.
 
 Until version 3.0 becomes generally available, you've got a couple of options. The first is obviously to download Octopress 2.0, install HPSTR, and start blogging. This is certainly a viable option, and I'm more than willing to help you if you run into glitches. 
 
