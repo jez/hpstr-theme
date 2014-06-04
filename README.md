@@ -5,7 +5,14 @@ This is a port of the [HPSTR Theme][HPSTR] by [mmistakes][mmistakes] for Octopre
 To see a live preview of the theme, check out mmistakes's [live Jekyll version][jekyll-preview]. You can also feel free to check out [blog.zimmerman.io][blog] which currently uses the HPSTR theme for Octopress (you can also check out the source of this repo to get a feel for getting the theme to work with an Octopress installation.) 
 
 ## Installation
-Installing themes in Octopress 2.0 is done in the `.themes` directory of your project.
+### Requirements
+This theme uses a Compass plugin for animations which is aptly called "animation". To install it, follow the instructions [here][compass-animation] to download and install it as a Ruby gem for Compass.
+
+### Walkthrough
+> #### Hey you with the trigger happy command line
+> Before you run the following commands, if you already have an Octopress theme installed, you may want to move your `source/` and `sass/` folders to `source.bak/` and `sass.bak/`, respectively. During the Octopress installation process, any residual files from old themes that are not overwritten can pollute your source directory and cause confusing build errors. To avoid this, simply back up these files and restore those specific files which are specific to your blog (i.e., special pages you may have introduced and all of your `_posts/` directory, among other files).
+
+Installing themes in Octopress 2.0 is done using the `.themes` directory of your project.
 ```bash
 $ cd your-octopress-blog
 $ git clone https://github.com/Z1MM32M4N/hpstr-theme.git .themes/hpstr
@@ -15,6 +22,10 @@ $ rake generate
 > ### Note
 > If the `rake` commands don't work, you may have to try `bundle exec rake`, depending on how you have ruby installed on your system.
 
+### Caveats
+The third party Compass plugin to handle animations doesn't like to play well with Octopress's "watch" features, `rake generate` and `rake preview`. When running either of these commands, Octopress complains that it can't find the Compass plugin 'animation'. However, with an otherwise successful installation of the plugin, running `compass compile` and `compass watch` will build the Sass without error.
+
+There is a GitHub issue filed [here][compass-issue] if you would like to follow along, offer a solution, or see what others have to say (though I doubt this will get much attention in the light of Octopress 3.0).
 ## What Next
 There are a lot of cool things you can do after installing HPSTR for Octopress.
 
@@ -46,6 +57,8 @@ I'm sure that there are many more options, not the least of which is to go build
 [migration]: https://github.com/octopress/octopress/issues/30
 [ink]: https://github.com/octopress/ink
 [imathis]: https://github.com/imathis
+[compass-animation]: https://github.com/ericam/compass-animation
+[compass-issue]: https://github.com/imathis/octopress/issues/1570
 
 ## License
 HPSTR for Octopress

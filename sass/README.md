@@ -4,6 +4,9 @@ go about changing it for your own purposes. With that in mind, here is a quick
 overview of how these files are laid out and where are some good places to
 start when customizing the theme.
 
+## Requirements
+This theme uses a Compass plugin for animations which is aptly called "animation". To install it, follow the instructions [here][compass-animation] to download and install it as a Compass gem for Ruby.
+
 ## Layout
 This is the basic sass layout:
 
