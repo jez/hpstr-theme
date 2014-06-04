@@ -26,7 +26,7 @@ $ rake generate
 This theme requires a lot of changes to your `_config.yml`, which are all documented [here](Properties.md), and one line to be added to your `config.rb` for Sass to compile (this is the line `require 'animation'` as documented in the installations requirements above).
 
 ### Caveats
-The third party Compass plugin to handle animations doesn't like to play well with Octopress's "watch" features, `rake generate` and `rake preview`. When running either of these commands, Octopress complains that it can't find the Compass plugin 'animation'. However, with an otherwise successful installation of the plugin, running `compass compile` and `compass watch` will build the Sass without error.
+The third party Compass plugin to handle animations doesn't like to play well with the features Octopress provides to automate the build process, `rake generate` and `rake preview`. When running either of these commands, Octopress complains that it can't find the Compass plugin 'animation'. However, with an otherwise successful installation of the plugin, running `compass compile` and `compass watch` will build the Sass without error.
 
 There is a GitHub issue filed [here][compass-issue] if you would like to follow along, offer a solution, or see what others have to say (though I doubt this will get much attention in the light of Octopress 3.0).
 ## What Next
