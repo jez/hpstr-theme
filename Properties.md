@@ -126,5 +126,7 @@ The following properties can be specified in the front-matter for each post.  Yo
     - Clicking on the gray box mentioned above will take you to the link specified by this variable.
 - `page.image.background`
     - The url of a background image for the page. This image will replace the default light gray color of the background on the page.
+- `page.share`
+    - Boolean. Whether or not to add social sharing links to the page.
 
 [defaults]: http://jekyllrb.com/docs/configuration/#frontmatter-defaults
