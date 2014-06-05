@@ -19,6 +19,7 @@ The following properties exist in the HPSTR for Jekyll theme, and must be added 
 - `site.avatar`
     - The path of an avatar image, relative to the `/` for your site, to be displayed in the drop down menu . Example:
       `avatar: /images/my-picture.jpg`
+    - Note that this could also be the address of an external link by instead including `http://` and then the link.
 - `site.author_bio`
     - A short description to be displayed in the 'About' link of the drop down menu.
 - `site.links`
@@ -116,7 +117,7 @@ The following properties can be specified in the front-matter for each post.  Yo
 - `page.no_header`
     - Remove the author and date information from the top of a post, as well as the link to the comment thread.
 - `page.image.feature`
-    - The url of an image to be "featured" at the top of the page. Also used when search engine optimizing your site.
+    - The url of an image to be "featured" at the top of the page. Also used when search engine optimizing your site. __This and all other images described in this section should be given as absoloute links.__ (For clarification, see the examples given for the avatar images.)
 - `page.image.thumb`
     - If the previous option is not set but you would still like to include a small image thumbnail when SEO'ing your site, you can set this variable with such a link.
 - `page.image.credit`
