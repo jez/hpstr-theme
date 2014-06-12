@@ -63,3 +63,43 @@ img.right {
   float: right;
   margin-left: 1.5rem
 }
+
+figure.code figcaption {
+  padding-top: 0px;
+  position: relative;
+  text-align: center;
+  font-size: 13px;
+  line-height: 2em;
+  font-weight: normal;
+  margin-bottom: 0;
+  @include border-top-radius(5px);
+  background-color: #aaaaaa;
+  text-shadow: #fff 0 1px 0;
+  color: #777;
+  @include background-image(linear-gradient(#ffffff,#f0f0f0 6%,#e5e5e5 90%,#dddddd));
+  border: 1px solid #c5c5c5;
+  border-top-color: #d5d5d5;
+  border-bottom: 0;
+
+  a {
+    position: absolute;
+    right: 0.8em;
+    text-decoration: none;
+    color: inherit;
+    z-index: 1;
+    padding-left: 3em;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:focus {
+    outline: 0;
+  }
+
+}
+
+figure.code .highlight {
+  @include border-top-radius(0);
+}
