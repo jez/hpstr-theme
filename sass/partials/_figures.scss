@@ -102,4 +102,5 @@ figure.code figcaption {
 
 figure.code .highlight {
   @include border-top-radius(0);
+  overflow: scroll;
 }
