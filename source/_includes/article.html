@@ -27,8 +27,8 @@ the index page or a normal post page.
   </div><!-- /.entry-meta -->
   {% if post.external_url %}
     <h1 class="entry-title">
-      <a href="{{ root_url }}{{ post.url }}" rel="bookmark" title="{{ titlecased }}"><i class="icon-double-angle-right"></i></a> 
-      <a href="{{ post.external_url }}">{{ titlecased }}</a>
+      <a href="{{ post.external_url }}" rel="bookmark" title="{{ titlecased }}"><i class="fa fa-external-link"></i></a> 
+      <a href="{{ root_url }}{{ post.url }}">{{ titlecased }}</a>
     </h1>
   {% else %}
     <h1 class="entry-title">
