@@ -20,11 +20,11 @@ image:
     {% if paginator.previous_page == 1 %}
       <a href="/" class="btn">Previous</a>
     {% else %}
-      <a href="{{ root_url }}/page{{ paginator.previous_page }}" class="btn">Previous</a>
+      <a href="{{ root_url }}{ paginator.previous_page }}" class="btn">Previous</a>
     {% endif %}
   {% endif %}
   <a href="{{ root_url }}/archives">Blog Archives</a>
   {% if paginator.next_page %}
-    <a href="{{ root_url }}/page{{ paginator.next_page }}" class="btn">Next</a>
+    <a href="{{ root_url }}{{ paginator.next_page }}" class="btn">Next</a>
   {% endif %}
 </div><!-- /.pagination -->
