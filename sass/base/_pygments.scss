@@ -18,8 +18,6 @@ $pyviolet: rgba(174,129,255,1) !default;  // Literals except strings, etc.
 $pyyellow: rgba(230,219,116,1) !default;  // String and date literals, etc.
 
 .highlight {
-  margin-bottom: 1.5em;
-  // @include font-rem(0.75);
   color: $pygray1;
   border: 1px solid darken($body-color, 5%);
   background-color: $pygray02;
