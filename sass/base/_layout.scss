@@ -16,8 +16,8 @@ body {
   @include line-height($p_lh);
   @include margin-after;
 	// Dotted line underlines for links
-	p > a,
-	li > a {
+	p > a:not(.image-link),
+	li > a:not(.image-link) {
 		border-bottom: 1px dotted lighten($link-color, 50%);
 		&:hover {
 			border-bottom-style: solid;
