@@ -5,7 +5,9 @@
       {% capture background %}{{ site.background }}{% endcapture %}
   {% endif %}
 
-  {% capture background %}{{ include local-or-external-image target="{{ background }}" }}{% endcapture %}
+  {% unless background contains '//' %}
+    {% capture background %}{{ root_url }}/images/{{ background }}{% endcapture %}
+  {% endunless%}
 
   <style type="text/css">body {background-image:url({{ background }});}</style>
 {% endif %}
