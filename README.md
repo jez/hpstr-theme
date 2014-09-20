@@ -27,7 +27,7 @@ This theme requires a lot of changes to your `_config.yml`, which are all docume
 
 For the stylesheets to be loaded properly, you need to configure Compass to generate your static file assets into the `source/` folder. This can be done in `config.rb`. By prefixing all the output paths (`css_dir` in particular) with '`source/`', Compass will know that it should actually place the generated files inside of folders within the `source/` directory. 
 
-You will also need to add one line to be added to your `config.rb` for Sass to compile the animations, if you didn't already. (This is the line "`require 'animation'`" as documented in the requirements for installation above.)
+You will also need to add one line to your `config.rb` for Sass to compile the animations, if you didn't already. (This is the line "`require 'animation'`" as documented in the requirements for installation above.)
 
 ### Caveats
 The third party Compass plugin to handle animations doesn't like to play well with the features Octopress provides to automate the build process, `rake generate` and `rake preview`. When running either of these commands, Octopress complains that it can't find the Compass plugin 'animation'. However, with an otherwise successful installation of the plugin, running `compass compile` and `compass watch` will build the Sass without error.
