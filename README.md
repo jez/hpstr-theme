@@ -25,7 +25,14 @@ $ rake generate
 ### Setting up your `_config.yml` and `config.rb`
 This theme requires a lot of changes to your `_config.yml`, which are all documented [here](Properties.md). Make sure you check it out and add the new required fields.
 
-For the stylesheets to be loaded properly, you need to configure Compass to generate your static file assets into the `source/` folder. This can be done in `config.rb`. By prefixing all the output paths (`css_dir` in particular) with '`source/`', Compass will know that it should actually place the generated files inside of folders within the `source/` directory. 
+For the stylesheets to be loaded properly, you need to configure Compass to generate your static file assets into the `source/` folder. This can be done in `config.rb`. By prefixing all the output paths (`css_dir` in particular) with '`source/`', Compass will know that it should actually place the generated files inside of folders within the `source/` directory. To give an example, my config.rb contains the lines:
+
+```ruby
+css_dir = "source/stylesheets"
+sass_dir = "sass"
+```
+
+This tells Compass to look in the folder `sass/` for scss files, and to place them inside `source/stylesheets/` when the css files are compiled. Once inside the `source/stylesheets` directory, running `rake generate` will take care of moving them into `public/`.
 
 You will also need to add one line to be added to your `config.rb` for Sass to compile the animations, if you didn't already. (This is the line "`require 'animation'`" as documented in the requirements for installation above.)
 
