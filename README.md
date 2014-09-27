@@ -12,7 +12,7 @@ To see a live preview of the theme, check out mmistakes's [live Jekyll version][
 Installing themes in Octopress 2.0 is done using the `.themes` directory of your project.
 ```bash
 $ cd your-octopress-blog
-$ git clone https://github.com/Z1MM32M4N/hpstr-theme.git .themes/hpstr
+$ git submodule add https://github.com/Z1MM32M4N/hpstr-theme.git .themes/hpstr
 $ rake install['hpstr']
 $ rake generate
 ```
