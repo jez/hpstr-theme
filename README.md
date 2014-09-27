@@ -19,7 +19,7 @@ $ rake generate
 > ### Note
 > If the `rake` commands don't work, you may have to try `bundle exec rake`, depending on how you have ruby installed on your system.
 
-### Setting up your `_config.yml` and `config.rb`
+### Setting up your `_config.yml`, `config.rb`, and Gemfile
 This theme requires a lot of changes to your `_config.yml`, which are all documented [here](Properties.md). Make sure you check it out and add the new required fields.
 
 For the stylesheets to be loaded properly, you need to configure Compass to generate your static file assets into the `source/` folder. This can be done in `config.rb`. By prefixing all the output paths (`css_dir` in particular) with '`source/`', Compass will know that it should actually place the generated files inside of folders within the `source/` directory. To give an example, my config.rb contains the lines:
@@ -30,6 +30,36 @@ sass_dir = "sass"
 ```
 
 This tells Compass to look in the folder `sass/` for scss files, and to place them inside `source/stylesheets/` when the css files are compiled. Once inside the `source/stylesheets` directory, running `rake generate` will take care of moving them into `public/`.
+
+Octopress unfortunately ships with an out-of-date version of Compass. This theme uses features of Compass that are not available in the version it ships with, namely the file "compass/css3/animation". To fix this, edit the line in your `Gemfile` that begins with 
+
+```ruby
+  ...
+  gem "compass", ~> ...
+  ...
+```
+
+to one of the following (depending on whether you want cutting edge updates or a more restricted update schedule, respectively).
+
+```ruby
+  ...
+  gem "compass"
+  ...
+  
+# OR
+
+  ...
+  gem "compass", ~> 1.0.1
+  ...
+```
+
+If you don't get this, you will get an error like 
+
+```
+error sass/screen.scss (Line 15: File to import not found or unreadable: compass/css3/animation.)
+```
+
+Once you do this, re-run `bundler update` to get the updated version of Compass.
 
 ## What Next
 There are a lot of cool things you can do after installing HPSTR for Octopress.
