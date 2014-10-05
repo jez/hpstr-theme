@@ -49,7 +49,7 @@ to one of the following (depending on whether you want cutting edge updates or a
 # OR
 
   ...
-  gem "compass", ~> 1.0.1
+  gem "compass", "~> 1.0.1"
   ...
 ```
 
@@ -59,7 +59,7 @@ If you don't get this, you will get an error like
 error sass/screen.scss (Line 15: File to import not found or unreadable: compass/css3/animation.)
 ```
 
-Once you do this, re-run `bundler update` to get the updated version of Compass.
+Once you do this, re-run `bundle update` to get the updated version of Compass.
 
 ## What Next
 There are a lot of cool things you can do after installing HPSTR for Octopress.
