@@ -10,7 +10,7 @@
 					<h4>{{ site.author }}</h4>
 					<p>{{ site.author_bio }}</p>
 				</li>
-				<li><a href="{{ site.author_website }}">Learn More</a></li>
+				{% if site.author_website %}<li><a href="{{ site.author_website }}">Learn More</a></li>{% endif %}
 				{% if site.email %}<li>
 					<a href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i> Email</a>
 				</li>{% endif %}
