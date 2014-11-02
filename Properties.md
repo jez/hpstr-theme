@@ -59,6 +59,8 @@ If this is not your first time using Octopress, you will likely already have the
     - A short description of the blog to be used as metadata in page headers.
 - `site.email`
     - The main email address of the author. __HPSTR for Jekyll migration note__: this property does not already exist for you. Instead, it exists under the name `site.owner.email`.
+- `site.learn_more_link`
+    - Customization of the `Learn more` link in the dropdown menu.
 
 #### Jekyll & Plugins
 - `site.root`

@@ -10,7 +10,7 @@
 					<h4>{{ site.author }}</h4>
 					<p>{{ site.author_bio }}</p>
 				</li>
-				<li><a href="//www.zimmerman.io">Learn More</a></li>
+				{% if site.learn_more_link %}<li><a href="{{ site.learn_more_link }}">Learn More</a></li>{% endif %}
 				{% if site.email %}<li>
 					<a href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i> Email</a>
 				</li>{% endif %}
