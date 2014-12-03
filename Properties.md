@@ -24,14 +24,15 @@ The following properties exist in the HPSTR for Jekyll theme, and must be added 
     - A short description to be displayed in the 'About' link of the drop down menu.
 - `site.links`
     - This property can take a list of links to display on the top level of the drop down menu. Examples:
-
-          # In _config.yml:
-          links:
-            - title: Extra Link in Menu
-              url: /my-cool-internal-link
-            - title: External Link
-              url: http://www.example.com/
-              external: true
+```
+# In _config.yml:
+links:
+  - title: Extra Link in Menu
+    url: /my-cool-internal-link
+  - title: External Link
+    url: http://www.example.com/
+    external: true
+```
 - `site.background`
     - The default background image to use for the site. See `page.image.background` for more information on how this is used.
 - `site.keywords`
