@@ -1,5 +1,5 @@
 # Properties
-This document lists all the properties you can and should populate which are not already well documented by Octopress in order to take full advantage of all the Octopress/HPSTR goodness available. 
+This document lists all the properties you can and should populate which are not already well documented by Octopress in order to take full advantage of all the Octopress/HPSTR goodness available.
 
 __All properties prefixed with `site` should be populated in `_config.yml` in the root directory of the project.__ (You should omit the `site` prefix when entering them: this will be automatically added when Jekyll generates the site.)
 
@@ -7,7 +7,7 @@ __All properties prefixed with `page` should be populated per article in the fro
 
 > ### Note to HPSTR for Jekyll Users:
 > If you are migrating from a plain Jekyll/HPSTR blog setup, you will want to pay careful attention to these properties to see which have changed.
-> 
+>
 > In most cases, the decision was made to make property names in the Octopress spirit. While I agree that the HPSTR for Jekyll organization is _much_ better, my main intention was to make the experience as seamless as possible for existing Octopress users.
 
 ## Global Properties (`site.*`)
@@ -24,7 +24,7 @@ The following properties exist in the HPSTR for Jekyll theme, and must be added 
     - A short description to be displayed in the 'About' link of the drop down menu.
 - `site.links`
     - This property can take a list of links to display on the top level of the drop down menu. Examples:
-          
+
           # In _config.yml:
           links:
             - title: Extra Link in Menu
@@ -89,7 +89,7 @@ If this is not your first time using Octopress, you will likely already have the
     - No longer used. If you do not want your Google+ profile to be displayed as a link in the dropdown menu, unset the above variable. Note doing so will remove the author information from search results.
 - `site.facebook_like`
     - This property has no function in the HPSTR for Octopress theme. Facebook sharing is enabled on all posts.
-- All Pinboard and Delicious customizations have been removed. 
+- All Pinboard and Delicious customizations have been removed.
     - Feel free to add them back in by editing the file `_includes/navigation.html` and adding in `<li>` tags for each profile link you wish to display. You may instead just use the `site.links` to add arbitrary custom links. (See above)
 
 ## Per Page Properties (`page.*`)
