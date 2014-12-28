@@ -12,23 +12,19 @@ image:
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
     {% if forloop.first %}
-    <article>
+    <article class="archive-year">
       <h2 id="{{ this_year }}-ref">{{ this_year }}</h2>
-      <ul>
     {% endif %}
 
-        <li class="entry-title"><a href="{{ root_url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-
+    <h3><a href="{{ root_url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
     {% if forloop.last %}
-      </ul>
+      <div class="clear-both"></div>
     </article>
     {% else %}
         {% if this_year != next_year %}
-          </ul>
         </article>
         <article>
           <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
-          <ul>
         {% endif %}
     {% endif %}
 {% endfor %}
