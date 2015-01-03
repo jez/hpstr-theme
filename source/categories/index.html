@@ -22,8 +22,8 @@ image:
 </ul>
 
 {% for category in categories_list %}
-	<article class="category">
-	<h2 id="{{ category[0] }}">{{ category[0] }}</h2>
+	<article id="{{ category[0] }}" class="category">
+	<h2>{{ category[0] }}</h2>
 		{% assign pages_list = category[1] %}
 		{% for post in pages_list %}
 			{% if post.title != null %}
