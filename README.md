@@ -2,7 +2,7 @@
 This is a port of the [HPSTR Theme][HPSTR] by [mmistakes][mmistakes] for Octopress. The theme was initially built for Jekyll and Less; this theme is written entirely in Sass and makes use of the Octopress 2.0 blogging framework.
 
 ## Preview
-To see a live preview of the theme, check out mmistakes's [live Jekyll version][jekyll-preview]. You can also feel free to check out [blog.zimmerman.io][blog] which currently uses the HPSTR theme for Octopress (you can also check out the source of this repo to get a feel for getting the theme to work with an Octopress installation.) 
+To see a live preview of the theme, check out mmistakes's [live Jekyll version][jekyll-preview]. You can also feel free to check out [blog.zimmerman.io][blog] which currently uses the HPSTR theme for Octopress (you can also check out the source of this repo to get a feel for getting the theme to work with an Octopress installation.)
 
 ## Installation
 ### Walkthrough
@@ -31,7 +31,7 @@ sass_dir = "sass"
 
 This tells Compass to look in the folder `sass/` for scss files, and to place them inside `source/stylesheets/` when the css files are compiled. Once inside the `source/stylesheets` directory, running `rake generate` will take care of moving them into `public/`.
 
-Octopress unfortunately ships with an out-of-date version of Compass. This theme uses features of Compass that are not available in the version it ships with, namely the file "compass/css3/animation". To fix this, edit the line in your `Gemfile` that begins with 
+Octopress unfortunately ships with an out-of-date version of Compass. This theme uses features of Compass that are not available in the version it ships with, namely the file "compass/css3/animation". To fix this, edit the line in your `Gemfile` that begins with
 
 ```ruby
   ...
@@ -45,7 +45,7 @@ to one of the following (depending on whether you want cutting edge updates or a
   ...
   gem "compass"
   ...
-  
+
 # OR
 
   ...
@@ -53,7 +53,7 @@ to one of the following (depending on whether you want cutting edge updates or a
   ...
 ```
 
-If you don't get this, you will get an error like 
+If you don't get this, you will get an error like
 
 ```
 error sass/screen.scss (Line 15: File to import not found or unreadable: compass/css3/animation.)
@@ -71,12 +71,12 @@ After installing this theme, especially on a fresh Octopress blog, you should be
 You can read about the Sass documents [here](sass/README.md), and about the various properties that are used throughout the configuration files and front matter [here](Properties.md). I __really__ care about well documented code, so if there's something you think could be explaned better or you need help navigating something, _please_ submit an issue or send me a message [on Twitter](https://www.twitter.com/Z1MM32M4N).
 
 #### Submit Pull Requests!
-I didn't port every feature to Octopress. Instead, I focused mostly on just those which I thought I would personally use. If you like this theme but I left out your favorite feature, be sure to fork this repo, add in your feature _in a separate feature branch_, and submit a pull request. 
+I didn't port every feature to Octopress. Instead, I focused mostly on just those which I thought I would personally use. If you like this theme but I left out your favorite feature, be sure to fork this repo, add in your feature _in a separate feature branch_, and submit a pull request.
 
 ## Octopress 3.0
 Octopress 3.0 is [in the works][v3]! This release, however, is [going to be vastly different][migration] from Octopress 2.0. In Octopress 3.0, [Octopress Ink][ink] will become the method through which themes are created, distributed, and updated, leaving the old method of creating themes used by version 2.0 behind.
 
-Until version 3.0 becomes generally available, you've got a couple of options. The first is obviously to download Octopress 2.0, install HPSTR, and start blogging. This is certainly a viable option, and I'm more than willing to help you if you run into glitches. 
+Until version 3.0 becomes generally available, you've got a couple of options. The first is obviously to download Octopress 2.0, install HPSTR, and start blogging. This is certainly a viable option, and I'm more than willing to help you if you run into glitches.
 
 The second is to start a Jekyll blog, perhaps by forking mmistakes's HPSTR Theme, and start using the Octopress 3.0 release candidates to manage your blog. As [imathis][imathis] has admitted, as of the time of this writing these release candidates are [not a finished product][migration], which may leave users feeling unsatisfied.
 
@@ -87,7 +87,7 @@ I'm sure that there are many more options, not the least of which is to go build
 [HPSTR]: https://github.com/mmistakes/hpstr-jekyll-theme
 [mmistakes]: https://github.com/mmistakes/
 [jekyll-preview]: http://mmistakes.github.io/hpstr-jekyll-theme/
-[blog]: http://blog.zimmerman.io/
+[blog]: https://blog.zimmerman.io/
 [v3]: https://github.com/octopress/octopress
 [migration]: https://github.com/octopress/octopress/issues/30
 [ink]: https://github.com/octopress/ink
