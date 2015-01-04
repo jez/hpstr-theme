@@ -73,6 +73,12 @@ You can read about the Sass documents [here](sass/README.md), and about the vari
 #### Submit Pull Requests!
 I didn't port every feature to Octopress. Instead, I focused mostly on just those which I thought I would personally use. If you like this theme but I left out your favorite feature, be sure to fork this repo, add in your feature _in a separate feature branch_, and submit a pull request.
 
+#### Use SSL!
+
+If you're hosting on GitHub Pages, you're in luck! [GitHub Pages now supports
+SSL][gh-pages-ssl]. This works even if you're on a custom domain if you sign up
+for the CloudFlare free tier.
+
 ## Octopress 3.0
 Octopress 3.0 is [in the works][v3]! This release, however, is [going to be vastly different][migration] from Octopress 2.0. In Octopress 3.0, [Octopress Ink][ink] will become the method through which themes are created, distributed, and updated, leaving the old method of creating themes used by version 2.0 behind.
 
@@ -94,6 +100,7 @@ I'm sure that there are many more options, not the least of which is to go build
 [imathis]: https://github.com/imathis
 [compass-animation]: https://github.com/ericam/compass-animation
 [compass-issue]: https://github.com/imathis/octopress/issues/1570
+[gh-pages-ssl]: https://konklone.com/post/github-pages-now-supports-https-so-use-it
 
 ## License
 HPSTR for Octopress
