@@ -56,8 +56,8 @@ $doc-font-root: 16 !default; // Number of pixels to mean 1 rem
 $doc-margin: 1.625 !default; // Space after paragraphs in rems
 
 body {
-	margin-top: 0px + $doc-margin * $doc-font-root;
-	font-size: 0px + $doc-font-root;	
+	margin-top: 1px * $doc-margin * $doc-font-root;
+	font-size: 1px * $doc-font-root;
 }
 
 // Colors

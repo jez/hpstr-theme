@@ -42,8 +42,8 @@
 // Just the REMs
 // -------------
 @mixin font-rem($size) {
-  font-size: 0px + $default-fs-mult * $size * $doc-font-root;
-  font-size: 0rem + $default-fs-mult * $size;
+  font-size: 1px * $default-fs-mult * $size * $doc-font-root;
+  font-size: 1rem * $default-fs-mult * $size;
 }
 
 @mixin line-height($height) {
@@ -51,8 +51,8 @@
 }
 
 @mixin margin-after() {
-  margin-bottom: 0px + $doc-margin * $doc-font-root;
-  margin-bottom: 0rem + $doc-margin;
+  margin-bottom: 1px * $doc-margin * $doc-font-root;
+  margin-bottom: 1rem * $doc-margin;
 }
 
 // Make visuallyhidden focusable with a keyboard
