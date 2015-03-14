@@ -7,4 +7,4 @@ If you cared enough to read that far, you should consider following me on
 my open source projects, make sure to star it on GitHub! I love hearing what
 people think, so feel free to comment, open an issue, or send me an email.
  [g]: https://www.github.com/jez/
- [h]: https://www.zimmerman.io/
+ [h]: https://jez.io/

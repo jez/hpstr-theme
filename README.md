@@ -2,7 +2,7 @@
 This is a port of the [HPSTR Theme][HPSTR] by [mmistakes][mmistakes] for Octopress. The theme was initially built for Jekyll and Less; this theme is written entirely in Sass and makes use of the Octopress 2.0 blogging framework.
 
 ## Preview
-To see a live preview of the theme, check out mmistakes's [live Jekyll version][jekyll-preview]. You can also feel free to check out [blog.zimmerman.io][blog] which currently uses the HPSTR theme for Octopress (you can also check out the source of this repo to get a feel for getting the theme to work with an Octopress installation.)
+To see a live preview of the theme, check out mmistakes's [live Jekyll version][jekyll-preview]. You can also feel free to check out [blog.jez.io][blog] which currently uses the HPSTR theme for Octopress (you can also check out the source of this repo to get a feel for getting the theme to work with an Octopress installation.)
 
 ## Installation
 ### Walkthrough
@@ -93,7 +93,7 @@ I'm sure that there are many more options, not the least of which is to go build
 [HPSTR]: https://github.com/mmistakes/hpstr-jekyll-theme
 [mmistakes]: https://github.com/mmistakes/
 [jekyll-preview]: http://mmistakes.github.io/hpstr-jekyll-theme/
-[blog]: https://blog.zimmerman.io/
+[blog]: https://blog.jez.io/
 [v3]: https://github.com/octopress/octopress
 [migration]: https://github.com/octopress/octopress/issues/30
 [ink]: https://github.com/octopress/ink
