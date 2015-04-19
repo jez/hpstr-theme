@@ -61,6 +61,14 @@ error sass/screen.scss (Line 15: File to import not found or unreadable: compass
 
 Once you do this, re-run `bundle update` to get the updated version of Compass.
 
+## Features
+
+### MathJax
+
+To enable [MathJax][mathjax] on a post or page, include `mathjax: true` in the
+front matter for a page. You can see the default MathJax configurations in
+[mathjax.html](source/_includes/mathjax.html).
+
 ## What Next
 There are a lot of cool things you can do after installing HPSTR for Octopress.
 
@@ -101,6 +109,7 @@ I'm sure that there are many more options, not the least of which is to go build
 [compass-animation]: https://github.com/ericam/compass-animation
 [compass-issue]: https://github.com/imathis/octopress/issues/1570
 [gh-pages-ssl]: https://konklone.com/post/github-pages-now-supports-https-so-use-it
+[mathjax]: https://www.mathjax.org/
 
 ## License
 HPSTR for Octopress
