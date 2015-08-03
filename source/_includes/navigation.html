@@ -12,16 +12,19 @@
 				</li>
 				{% if site.learn_more_link %}<li><a href="{{ site.learn_more_link }}">Learn More</a></li>{% endif %}
 				{% if site.email %}<li>
-					<a href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i> Email</a>
+					<a href="mailto:{{ site.email }}" target="_blank"><i class="fa fa-envelope"></i> Email</a>
 				</li>{% endif %}
 				{% if site.twitter_user %}<li>
-					<a href="https://twitter.com/{{ site.twitter_user }}"><i class="fa fa-twitter"></i> Twitter</a>
+					<a href="https://twitter.com/{{ site.twitter_user }}" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
 				</li>{% endif %}
 				{% if site.googleplus_user %}<li>
-					<a href="https://plus.google.com/{{ site.googleplus_user }}"><i class="fa fa-google-plus"></i> Google+</a>
+					<a href="https://plus.google.com/{{ site.googleplus_user }}" target="_blank"><i class="fa fa-google-plus"></i> Google+</a>
 				</li>{% endif %}
 				{% if site.github_user %}<li>
-					<a href="https://github.com/{{ site.github_user }}"><i class="fa fa-github"></i> GitHub</a>
+					<a href="https://github.com/{{ site.github_user }}" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+				</li>{% endif %}
+				{% if site.linkedin_profile %}<li>
+					<a href="{{ site.linkedin_profile }}" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
 				</li>{% endif %}
 			</ul><!-- /.dl-submenu -->
 		</li>
